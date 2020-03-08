@@ -25,8 +25,8 @@ public class First {
     k = 0;
     for (int i = 1; i < p + 1; i++)
     {
-        x = a.nextDouble();
-        y = a.nextDouble();
+        x = a.nextInt(2*r+1)-r + a.nextDouble();
+        y = a.nextInt(2*r+1)-r + a.nextDouble();
         if ((x * x + y * y) <= r * r)
         {
             k++;
@@ -34,10 +34,6 @@ public class First {
     }
     pole = polekw * k / p;
     System.out.println("Pole koła obliczone numerycznie: {0}"+ pole);
-
-
-        
-       
     }
     
 }
