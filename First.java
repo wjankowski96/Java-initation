@@ -1,7 +1,21 @@
 
 public class First {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Hello world2!");
+     
+        int[] tab;
+        tab = new int[5];
+        for (int i=0; i<5; i++)
+            {
+                tab[i]=i+1;
+            }
+        for (int i=0; i<5; i++)
+            {
+            System.out.println(tab[i]);
+            }
+        System.out.println("Martyna");
+
+        System.out.println(tab.lenght);
+       
     }
+    
 }
