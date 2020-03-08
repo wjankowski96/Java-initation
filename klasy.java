@@ -1,7 +1,7 @@
 //funkcja kolo która posiada 2 metody te nizej ale osobno do 29 marca
-import java.util.Scanner;
-import java.util.Random;
 
+import java.util.Random;
+import java.util.Scanner;
 
  class Kolo{
 
@@ -10,15 +10,22 @@ import java.util.Random;
          
 
          public void wczytaj(){
+          
             Scanner in = new Scanner(System.in);
             System.out.println("Podaj promień koła");
             r = in.nextInt();
             System.out.println("Promień koła:" + r);
             System.out.println("Podaj liczbę probek");
-            p = in.nextI();
+            p = in.nextInt();
             System.out.println("Liczba próbek:" + p);
+            
     }
+        public void dane(int m, int n){
+            r=m;
+            p=n;
+            
 
+        }
 
         public void analitycznie(){
             pole = 3.14 * r * r;
@@ -45,10 +52,17 @@ import java.util.Random;
     }
 }
 
-public class First {
+public class klasy {
 
         public static void main(String[] args) {
             Kolo kolko = new Kolo();
             kolko.wczytaj();
+            kolko.numerycznie();
+            kolko.analitycznie();
+
+            Kolo kolo1 = new Kolo();
+            kolo1.dane(4,6);
+            kolo1.numerycznie();
+            kolo1.analitycznie();
     }
 }
