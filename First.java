@@ -15,8 +15,9 @@ import java.util.Random;
             r = in.nextInt();
             System.out.println("Promień koła:" + r);
             System.out.println("Podaj liczbę probek");
-            p = in.nextI();
+            p = in.nextInt();
             System.out.println("Liczba próbek:" + p);
+            in.close();
     }
 
 

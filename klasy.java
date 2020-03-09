@@ -18,6 +18,7 @@ import java.util.Scanner;
             System.out.println("Podaj liczbę probek");
             p = in.nextInt();
             System.out.println("Liczba próbek:" + p);
+            in.close();
             
     }
         public void dane(int m, int n){
