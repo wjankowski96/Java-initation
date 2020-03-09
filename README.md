@@ -1,1 +1,2 @@
-# Java-initation
+# Java
+## Krótkie programy w języku java
